@@ -17,9 +17,10 @@ int main(void)
 	while (y < 123)
 {
 	putchar (y);
-	putchar ('\n');
-
 	y = y + 1;
 }
+	putchar ('\n');
+
+
 	return (0);
 }

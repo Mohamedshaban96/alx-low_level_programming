@@ -12,11 +12,11 @@
 */
 int main(void)
 {
-	int y = 0;
+	int y = 48;
 
-	while (y < 10)
+	while (y < 58)
 {
-	putchar ('y');
+	putchar (y);
 	y = y + 1;
 }
 	putchar ('\n');

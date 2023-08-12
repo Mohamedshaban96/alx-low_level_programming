@@ -19,6 +19,8 @@ int main(void)
 	putchar (y);
 }
 	putchar ('\n');
-	
+
+	y = y + 1;
+
 	return (0);
 }

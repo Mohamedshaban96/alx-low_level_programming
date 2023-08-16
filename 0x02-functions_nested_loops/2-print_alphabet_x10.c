@@ -8,10 +8,12 @@
 
 void print_alphabet_x10(void)
 {
-	int p = 0, y = 97;
+	int p = 0, y;
 
 	while (p < 10)
 	{
+		y = 97;
+
 		while (y < 123)
 		{
 			_putchar(y);

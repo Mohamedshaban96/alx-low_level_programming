@@ -17,8 +17,9 @@ void print_alphabet_x10(void)
 			_putchar(y);
 		y++;
 		}
-	}
+	
 	_putchar('\n');
 
 		p++;
+	}
 }

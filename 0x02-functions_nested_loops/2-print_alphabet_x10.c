@@ -13,8 +13,10 @@ void print_alphabet_x10(void)
 	while (p < 10)
 	{
 		while (y < 123)
+		{
 			_putchar(y);
 		y++;
+		}
 	}
 	_putchar('\n');
 

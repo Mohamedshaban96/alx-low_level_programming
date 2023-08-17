@@ -1,7 +1,8 @@
 #include "main.h"
 
 /**
- * main - check the code.
+ * jack_bauer - print songs minutes
+ *
  *
  * Return: Always 0.
  */
@@ -19,7 +20,12 @@ void jack_bauer(void)
 	{
 		while (d < 10)
 		{
-			_putchar('a');
+			_putchar(a + 48);
+			_putchar(b + 48);
+			_putchar(':');
+			_putchar(c + 48);
+			_putchar(d + 48);
+			_putchar('\n');
 			d++;
 		}
 		c++;

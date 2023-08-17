@@ -16,8 +16,10 @@ void jack_bauer(void)
 	b = 0;
 	while (b < 10)
 	{
+		c = 0;
 	while (c < 10)
 	{
+		d = 0;
 		while (d < 10)
 		{
 			_putchar(a + 48);

@@ -27,6 +27,7 @@ void print_square(int size)
 			t++;
 		}
 		_putchar('\n');
+	y++;
 		}
 	}
 }

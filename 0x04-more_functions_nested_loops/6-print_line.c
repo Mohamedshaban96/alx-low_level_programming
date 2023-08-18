@@ -10,7 +10,7 @@ void print_line(int n)
 {
 	int y;
 
-	if (n < 1)
+	if (n <= 0)
 	{
 		_putchar('\n');
 	}

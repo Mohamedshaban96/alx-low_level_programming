@@ -32,5 +32,6 @@ void print_triangle(int size)
 			k++;
 		}
 		_putchar('\n');
+		j++;
 	}
 }

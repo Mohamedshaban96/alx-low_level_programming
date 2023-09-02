@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include "main.h"
 /**
-* main - prints the minimum number of coins 
+* main - prints the minimum number of coins
 * @argc: should count two arguments
 * @argv: arguments given to prog
 * Return: least number of coins, 0 if negatiive and 1 if right

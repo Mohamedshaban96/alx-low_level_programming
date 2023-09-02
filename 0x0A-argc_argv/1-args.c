@@ -7,7 +7,7 @@
 * @argv: pointer to an array of arguments
 * Return: 0 on success
 */
-int main(int argc, char *argv[])
+int main(int argc, char *argv[] __attribute__((unused)))
 {
 	if (argc > 0)
 {

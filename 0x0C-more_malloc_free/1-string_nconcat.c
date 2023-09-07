@@ -23,7 +23,6 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	else
 		while (s1[i] != '\0')
 			i++;
-
 	if (s2 == NULL)
 	{
 		s2 = "";
@@ -41,15 +40,16 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	if (new == NULL)
 		return (NULL);
 
-	while (k != '\0')
+	while (s1[k] != '\0')
 	{
-		new[k] = s2[k];
+		new[k] = s1[k];
 		k++;
 	}
 	while (l < n)
 	{
-		new[k + l] = s2[k];
+		new[k + l] = s2[l];
 		l++;
 	}
+	new[k + l] = '\0';
 	return (new);
 }

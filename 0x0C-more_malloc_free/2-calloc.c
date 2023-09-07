@@ -23,7 +23,10 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	cha = ar;
 
 	while (i < (nmemb * size))
+	{
 		cha[i] = 0;
+		i++;
+	}
 	return (cha);
 }
 

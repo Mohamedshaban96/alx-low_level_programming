@@ -1,5 +1,5 @@
 #include "function_pointers.h"
-
+#include <stddef.h>
 /**
  * print_name - check if array can be printed and send it to function to print
  * @name: the name to be printed

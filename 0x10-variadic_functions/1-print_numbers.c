@@ -24,7 +24,7 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 	j = va_arg(argus, int);
 	if (separator)
 		if (i == (n - 1))
-			printf("%d\n", j);
+			printf("%d", j);
 		else
 			printf("%d%s", j, separator);
 	else
@@ -33,5 +33,6 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 	}
 		i++;
 	}
+	printf("\n");
 	va_end(argus);
 }

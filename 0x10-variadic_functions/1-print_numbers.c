@@ -16,6 +16,8 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 	int j = 0;
 
 	va_start(argus, n);
+	if (n == 0)
+		return;
 
 	while (i < n)
 	{
@@ -24,7 +26,7 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 		if (i == (n - 1))
 			printf("%d\n", j);
 		else
-			printf("%d%s ", j, separator);
+			printf("%d%s", j, separator);
 	else
 	{
 		printf("%d ", j);

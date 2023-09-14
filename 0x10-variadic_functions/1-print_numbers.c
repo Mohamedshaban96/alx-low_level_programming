@@ -26,10 +26,12 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 	{
 	j = va_arg(argus, int);
 	if (separator)
+	{
 		if (i == (n - 1))
 			printf("%d\n", j);
 		else
 			printf("%d%s", j, separator);
+	}
 	else
 	{
 		printf("%d ", j);

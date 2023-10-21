@@ -7,11 +7,11 @@
  * Return: the amount of letters it could read
  */
 
-ssize_tread_textfile(const char *filename, size_t letters)
+ssize_t read_textfile(const char *filename, size_t letters)
 {
 	int filp;
 	char *buff;
-	size_t len, lenwr;
+	ssize_t len, lenwr;
 
 	if (filename == NULL)
 		return (0);
@@ -23,19 +23,20 @@ ssize_tread_textfile(const char *filename, size_t letters)
 	buff = malloc(sizeof(char) * letters);
 	if (buff == NULL)
 	{
-		close(flip);
+		close(filp);
 		return (0);
 	}
 
-	len = read(fd, buffer, letters);
+	len = read(filp, buff, letters);
+
+	close(filp);
 	if (len == -1)
 	{
-		free(buff;
+		free(buff);
 		return (0);
 	}
 
-	lenw = write(STDOUT_FILENO, buffer, lenr);
-	close(flib);
+	lenwr = write(STDOUT_FILENO, buff, len);
 	free(buff);
 
 	if (len != lenwr)
